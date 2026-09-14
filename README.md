@@ -30,8 +30,10 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```bash
 git clone https://github.com/viktor-h-tech/aicodex-local-ctf.git
 cd aicodex-local-ctf
-bash scripts/setup-aicodex.sh --run
+bash scripts/setup-aicodex.sh --install-ollama --run
 ```
+
+The first run uses Ollama’s official Linux installer only when Ollama is not already installed. It then pulls the model, creates `aicodex`, and opens the chat.
 
 After setup, the model is available any time with:
 
