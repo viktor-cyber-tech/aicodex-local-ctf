@@ -114,6 +114,10 @@ flag{final_boss_passed}
 - A local Ollama chat does not execute commands. Use a separate terminal or an approved agent workflow in a disposable CTF workspace.
 - The 14B model can still make mistakes. Treat generated commands as suggestions and validate them before use.
 
-## License
+## License and permitted use
 
-MIT. See [LICENSE](LICENSE).
+This repository is available **only for lawful, educational, and non-commercial use**—such as personal learning, coursework, authorized CTFs, homelabs, and non-commercial research.
+
+Commercial use, resale, paid hosting, and incorporation into commercial products or services are not permitted. The author is not affiliated with, responsible for, or liable for unlawful or unauthorized use by any individual or organization. The repository is provided without warranty, to the maximum extent permitted by law.
+
+This is a custom source-available license, not an OSI-approved open-source license. See [LICENSE](LICENSE) for the complete terms.
