@@ -2,23 +2,52 @@
 
 ## Prerequisites
 
-- Windows 11 with 32 GB RAM recommended for `qwen2.5-coder:14b`.
-- Ollama installed and running.
-- At least 12 GB of free disk space for the base model and local cache.
+- Ollama installed and available in your terminal. Get it from [ollama.com/download](https://ollama.com/download).
+- Git installed.
+- At least 12 GB free disk space for the base model and local cache.
+- 32 GB RAM is recommended for `qwen2.5-coder:14b`; 16 GB may work but can be substantially slower.
 
-## Create AICodex
+## Clone and build
 
-From the repository folder in PowerShell:
+### Windows PowerShell
 
 ```powershell
-ollama pull qwen2.5-coder:14b
-ollama create aicodex -f .\Modelfile
+git clone https://github.com/viktor-h-tech/aicodex-local-ctf.git
+cd aicodex-local-ctf
+.\scripts\setup-aicodex.ps1 -Run
+```
+
+If execution policy prevents the script from starting, use this temporary, current-terminal-only setting:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\setup-aicodex.ps1 -Run
+```
+
+### Kali Linux, Debian, or WSL
+
+```bash
+git clone https://github.com/viktor-h-tech/aicodex-local-ctf.git
+cd aicodex-local-ctf
+bash scripts/setup-aicodex.sh --run
+```
+
+Both scripts:
+
+1. Check that Ollama is installed.
+2. Download `qwen2.5-coder:14b` if necessary.
+3. Build or rebuild the local `aicodex` model using the repository’s `Modelfile`.
+4. Start `ollama run aicodex` when passed `-Run` or `--run`.
+
+You can reopen it later from any folder:
+
+```text
 ollama run aicodex
 ```
 
-Confirm the model exists:
+Confirm it exists:
 
-```powershell
+```text
 ollama list
 ```
 
