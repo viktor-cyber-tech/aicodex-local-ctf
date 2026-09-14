@@ -4,6 +4,8 @@ A practical Ollama setup for a local, offline-first cybersecurity assistant buil
 
 It is designed for authorized CTFs, homelabs, defensive security work, PowerShell/Bash command generation, log analysis, and learning workflows. It is not an autonomous exploitation tool: have it produce a command, run it in your own lab or CTF environment, then verify the result.
 
+> **Responsible use:** This repository is for lawful, educational, and authorized use only. See [RESPONSIBLE_USE.md](RESPONSIBLE_USE.md) and [LICENSE](LICENSE).
+
 ![AICodex pipeline validation](assets/aicodex-pipeline.svg)
 
 ## Clone and run the same setup
