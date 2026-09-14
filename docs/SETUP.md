@@ -29,12 +29,14 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```bash
 git clone https://github.com/viktor-h-tech/aicodex-local-ctf.git
 cd aicodex-local-ctf
-bash scripts/setup-aicodex.sh --run
+bash scripts/setup-aicodex.sh --install-ollama --run
 ```
+
+The `--install-ollama` flag uses [Ollama’s official Linux installer](https://docs.ollama.com/) only if Ollama is missing. Omit that flag after the first install.
 
 Both scripts:
 
-1. Check that Ollama is installed.
+1. Check that Ollama is installed; the Bash script can install it when passed `--install-ollama`.
 2. Download `qwen2.5-coder:14b` if necessary.
 3. Build or rebuild the local `aicodex` model using the repository’s `Modelfile`.
 4. Start `ollama run aicodex` when passed `-Run` or `--run`.
