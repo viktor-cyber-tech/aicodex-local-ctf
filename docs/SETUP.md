@@ -47,6 +47,18 @@ You can reopen it later from any folder:
 ollama run aicodex
 ```
 
+## Manual Ollama CLI
+
+From the cloned repository folder, these commands perform the same model download, build, and launch without using a helper script:
+
+```bash
+ollama pull qwen2.5-coder:14b
+ollama create aicodex -f ./Modelfile
+ollama run aicodex
+```
+
+In Windows PowerShell, `ollama create aicodex -f .\\Modelfile` is equivalent.
+
 Confirm it exists:
 
 ```text
