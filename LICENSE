@@ -1,21 +1,38 @@
-MIT License
+Educational and Non-Commercial Use License
 
 Copyright (c) 2026 Viktor
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Permission
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Permission is granted to use, copy, modify, and share this repository and its original contents solely for personal learning, classroom or academic work, non-commercial research, authorized CTFs, homelabs, and other lawful educational purposes, subject to this license.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Restrictions
+
+You may not:
+
+- use the repository or its original contents for commercial purposes, including selling, licensing, hosting as a paid service, incorporating into a commercial product or service, or using it to provide paid services;
+- use the repository or its original contents for unlawful, harmful, unauthorized, or rights-infringing activity;
+- remove this license, copyright notice, or attribution from copies or substantial portions of the original contents;
+- state or imply that the copyright holder endorses, sponsors, employs, or is affiliated with you, your organization, or your use of this repository.
+
+For permission outside these terms, contact the copyright holder.
+
+3. No Warranty and Limitation of Liability
+
+THE REPOSITORY AND ITS ORIGINAL CONTENTS ARE PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE FOR ANY CLAIM, LOSS, DAMAGE, LIABILITY, OR EXPENSE ARISING FROM OR RELATED TO THE REPOSITORY, ITS ORIGINAL CONTENTS, OR THEIR USE, MISUSE, OR INABILITY TO USE. YOU ARE SOLELY RESPONSIBLE FOR YOUR ACTIONS, TARGETS, DATA, AND COMPLIANCE WITH APPLICABLE LAW.
+
+4. No Affiliation
+
+The copyright holder is not affiliated with, responsible for, or liable for any individual, organization, or use of this repository that violates law, authorization requirements, or these license terms.
+
+5. Third-Party Components
+
+This license applies only to the original contents of this repository. Ollama, Qwen2.5-Coder, and any other third-party software or models are obtained separately and remain subject to their own licenses and terms.
+
+6. Termination
+
+The permissions granted by this license terminate automatically if you violate its terms.
+
+This is a custom source-available license, not an OSI-approved open-source license.
