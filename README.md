@@ -41,6 +41,18 @@ After setup, the model is available any time with:
 ollama run aicodex
 ```
 
+## Manual Ollama CLI
+
+If Ollama is already installed and you prefer to see each step, run these commands from the cloned repository folder:
+
+```bash
+ollama pull qwen2.5-coder:14b
+ollama create aicodex -f ./Modelfile
+ollama run aicodex
+```
+
+The same three commands work in Windows PowerShell; use `.\\Modelfile` instead of `./Modelfile` if preferred.
+
 ## Why use a heavier 14B model on modest hardware?
 
 The ThinkPad used for this project has an Intel Core 7 240H, 32 GB DDR5 memory, and Intel integrated graphics. That means local inference is constrained mostly by CPU and shared memory—not dedicated GPU VRAM.
