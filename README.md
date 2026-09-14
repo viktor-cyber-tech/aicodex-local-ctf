@@ -6,6 +6,39 @@ It is designed for authorized CTFs, homelabs, defensive security work, PowerShel
 
 ![AICodex pipeline validation](assets/aicodex-pipeline.svg)
 
+## Clone and run the same setup
+
+Install [Ollama](https://ollama.com/download) first, then choose the shell you use. These commands download the base model, build the custom `aicodex` model from this repository’s `Modelfile`, and start it.
+
+### Windows PowerShell
+
+```powershell
+git clone https://github.com/viktor-h-tech/aicodex-local-ctf.git
+cd aicodex-local-ctf
+.\scripts\setup-aicodex.ps1 -Run
+```
+
+If PowerShell blocks the local script, allow it for only this terminal session and run it again:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\setup-aicodex.ps1 -Run
+```
+
+### Kali Linux, Debian, or WSL
+
+```bash
+git clone https://github.com/viktor-h-tech/aicodex-local-ctf.git
+cd aicodex-local-ctf
+bash scripts/setup-aicodex.sh --run
+```
+
+After setup, the model is available any time with:
+
+```text
+ollama run aicodex
+```
+
 ## Why use a heavier 14B model on modest hardware?
 
 The ThinkPad used for this project has an Intel Core 7 240H, 32 GB DDR5 memory, and Intel integrated graphics. That means local inference is constrained mostly by CPU and shared memory—not dedicated GPU VRAM.
@@ -20,27 +53,6 @@ We still chose `qwen2.5-coder:14b` because the smaller models were fast but unre
 | [`qwen2.5-coder:14b`](https://ollama.com/library/qwen2.5-coder) | ~9.0 GB | Kali/Bash and PowerShell command generation | **Chosen** |
 
 The goal is not to make the laptop compete with a desktop GPU. The goal is to accept slower generation in exchange for substantially better command construction, instruction-following, and troubleshooting. For exact transformations, use the command it provides and verify output locally.
-
-## Quick start
-
-1. [Install Ollama](https://ollama.com/download).
-2. Download the base model:
-
-   ```powershell
-   ollama pull qwen2.5-coder:14b
-   ```
-
-3. Clone this repository or download the `Modelfile`.
-4. Create the custom model from the repository root:
-
-   ```powershell
-   ollama create aicodex -f .\Modelfile
-   ollama run aicodex
-   ```
-
-5. Use a new session for each separate CTF task when context starts to affect answers.
-
-See [setup details](docs/SETUP.md), [validation tests](docs/VALIDATION.md), and [troubleshooting](docs/TROUBLESHOOTING.md).
 
 ## Safe, effective workflow
 
@@ -75,6 +87,8 @@ flag{final_boss_passed}
 │   ├── TROUBLESHOOTING.md
 │   └── VALIDATION.md
 ├── scripts/
+│   ├── setup-aicodex.ps1     # Builds AICodex on Windows PowerShell
+│   ├── setup-aicodex.sh      # Builds AICodex on Kali/Debian/WSL
 │   ├── decode_layers.sh
 │   └── decode_layers.ps1
 └── assets/                   # Terminal-style screenshots for the README
