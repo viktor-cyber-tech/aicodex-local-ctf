@@ -18,7 +18,7 @@ If you use Kali in VirtualBox or another VM, keep it as a separate terminal for 
 ### Windows PowerShell
 
 ```powershell
-git clone https://github.com/viktor-h-tech/aicodex-local-ctf.git
+git clone https://github.com/viktor-cyber-tech/aicodex-local-ctf.git
 cd aicodex-local-ctf
 .\scripts\setup-aicodex.ps1 -Run
 ```
@@ -33,7 +33,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ### Kali Linux, Debian, or WSL
 
 ```bash
-git clone https://github.com/viktor-h-tech/aicodex-local-ctf.git
+git clone https://github.com/viktor-cyber-tech/aicodex-local-ctf.git
 cd aicodex-local-ctf
 bash scripts/setup-aicodex.sh --install-ollama --run
 ```
