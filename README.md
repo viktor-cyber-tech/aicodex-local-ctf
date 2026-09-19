@@ -55,6 +55,12 @@ ollama run aicodex
 
 The same three commands work in Windows PowerShell; use `.\\Modelfile` instead of `./Modelfile` if preferred.
 
+## Example prompts
+
+New to local AI or introducing AICodex to a classmate? See [example prompts](docs/EXAMPLE_PROMPTS.md) for copy-paste starting points for exact decoding, layered artifacts, PowerShell 5.1, safe file triage, web-request analysis, defensive logs, and command explanations.
+
+**Best rule for flags and transformations:** ask AICodex for a command that calculates and prints the answer, run it in your own terminal, then paste the real output back. Do not trust a model to mentally guess a multi-step final flag.
+
 ## Why use a heavier 14B model on modest hardware?
 
 The ThinkPad used for this project has an Intel Core 7 240H, 32 GB DDR5 memory, and Intel integrated graphics. That means local inference is constrained mostly by CPU and shared memory—not dedicated GPU VRAM.
