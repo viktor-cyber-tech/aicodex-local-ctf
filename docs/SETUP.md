@@ -7,6 +7,12 @@
 - At least 12 GB free disk space for the base model and local cache.
 - 32 GB RAM is recommended for `qwen2.5-coder:14b`; 16 GB may work but can be substantially slower.
 
+## Performance recommendation
+
+Run Ollama and AICodex directly on the host operating system—Windows or Linux—for the best use of available CPU, system memory, and supported GPU acceleration. Running the model inside a virtual machine adds resource limits and virtualization overhead.
+
+If you use Kali in VirtualBox or another VM, keep it as a separate terminal for authorized CTF tools. Run AICodex on the host, then copy commands into Kali when you need its tools.
+
 ## Clone and build
 
 ### Windows PowerShell
